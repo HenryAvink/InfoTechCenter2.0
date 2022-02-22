@@ -16,11 +16,12 @@ gasLevelIndicator = gasLevelGauge()
 # Create If-ElIf-Else statements using the Comparative Operator == (Equal to) to display gas level messages
 def gasLevelAlert():
     gasStations = ["Shell", "BP", "Citgo", "Circle K", "Mobil", "Speedway", "Marathon", "Love's", "Meijer", "Costco", "Sunoco"]
+    miles = random.randint(1,25)
     gasLevelIndicator = gasLevelGauge()
     if gasLevelIndicator == "Empty":
         print("! ! !WARNING - YOU ARE ON EMPTY! ! !\nCalling Emergency Contact")
     elif gasLevelIndicator == "Low":
-        print("! ! !WARNING - LOW GASOLINE! ! !\nThe closest gas station is " + random.choice(gasStations))
+        print("! ! !WARNING - LOW GASOLINE! ! !\nThe closest gas station is " + random.choice(gasStations) + ". Distance is " + str(miles) + " miles away")
     elif gasLevelIndicator == "Quarter Tank":
         print("You are on a QUARTER TANK of gas\nStart planning a visit to the gas station")
     elif gasLevelIndicator == "Half Tank":
