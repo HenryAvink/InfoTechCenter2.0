@@ -7,4 +7,5 @@ colorama.init(strip=False, autoreset=True)
 
 print(Fore.RED + "Welcome to Hornet's InfoTechCenter\n")
 sleep(1)
-print(Fore.RED + "Hornet's Operating System Booting Up")
+print(Fore.RED + "Hornet's Operating System Booting Up\n")
+sleep(1)
