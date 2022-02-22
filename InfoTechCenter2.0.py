@@ -1,5 +1,7 @@
 
-import random # Gas Level Function
+import random
+
+# Gas Level Function
 
 def gasLevelGauge():
     gasLevelList = ["Empty","Low","Quarter Tank","Half Tank","Three Quarter Tank","Full"]
